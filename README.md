@@ -4,4 +4,7 @@ A set of modules and executables used to simulate detections and selection effec
 
 These scripts require 
  - lalsuite (pointer)
+ - healpy (pointer)
+ - astropy (pointer)
+ - pyephem (pointer)
  - corner (pointer)
