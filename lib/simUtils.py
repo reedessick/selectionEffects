@@ -10,7 +10,10 @@ import astropy
 from astropy.time import Time as astropyTime
 from astropy import coordinates as astropyCoordinates
 
-import ephem
+try:
+    import ephem
+except ImportError as e:
+    print( "WARNING: could not find 'ephem'. Functions involving the Moon's position may raise exceptions!" )
 
 from lal.gpstime import tconvert
 from lal.lal import GreenwichMeanSiderealTime as GMST
